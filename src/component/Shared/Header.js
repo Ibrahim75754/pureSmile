@@ -1,21 +1,25 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import logo from './../../img/logo/download.png';
 import './Header.css';
 
 const Header = () => {
+    const style = {
+        color: "white"
+    }
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <div className="header-bg">
+            <Navbar collapseOnSelect expand="lg">
                 <Container>
                     <img className="logo me-2" src={logo} alt="" />
                     <Navbar.Brand className="logo-name fs-3" href="#home">PureSmile</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#features">Home</Nav.Link>
-                            <Nav.Link href="#priing">Pricing</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Nav className="me-auto  text-light">
+                            <NavLink activeStyle={style} className="nav-link" to="/home">Home</NavLink>
+                            <NavLink activeStyle={style} className="nav-link" to="/about-us">About Us</NavLink>
+                            <NavLink activeStyle={style} className="nav-link" to="/hosgme">sgsdgs</NavLink>
 
                         </Nav>
                         <Nav>

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Teeth Whitening",
-        "desciption": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
+        "description": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
         "doctor": "Robin Hood",
         "price": 400,
         "img": "https://image.freepik.com/free-photo/woman-patient-dentist_1303-9357.jpg"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "name": "Cosmetic Dentistry",
-        "desciption": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
+        "description": "Aenean facilisis sodales est nec gravida. Morbi vitaes onest facilisis convallis commodo vel ante. Etiam ltricies lputate felis.",
         "doctor": "FATEMA AKTHER",
         "price": 400,
         "img": "https://image.freepik.com/free-photo/woman-patient-visiting-dentist_1303-24397.jpg"
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "name": "Pediatric Dentistry",
-        "desciption": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
+        "description": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
         "doctor": "Tasnima Akther",
         "price": 300,
         "img": "https://image.freepik.com/free-photo/stomatologist-protective-equipment-showing-tablet-dental-x-ray-reviewing-it-with-mother-patient-medical-team-wearing-face-shield-mask-gloves-explaining-radiography-using-notebook-display_482257-3507.jpg"
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "name": "Preventive Dentistry",
-        "desciption": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
+        "description": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
         "doctor": "Aran Hossain",
         "price": 250,
         "img": "https://image.freepik.com/free-photo/young-african-american-man-guy-visiting-dentist-s-office-prevention-oral-cavity-man-famale-doctor-while-checkup-teeth_1157-42071.jpg"
@@ -34,7 +34,7 @@
     {
         "id": 5,
         "name": "Dental crown",
-        "desciption": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
+        "description": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
         "doctor": "ASHRAF BADRY",
         "price": 300,
         "img": "https://image.freepik.com/free-photo/male-dentist-medical-mask-explaining-artificial-teeth-smiling-patient-clinic_158595-7725.jpg"
@@ -42,7 +42,7 @@
     {
         "id": 6,
         "name": "Teeth Whitening",
-        "desciption": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
+        "description": "The practice involves swishing oil around in your mouth to remove bacteria, which can turn into plaque and cause your teeth to look yellow.",
         "doctor": "Edwin Movrik",
         "price": 200,
         "img": "https://image.freepik.com/free-photo/woman-patient-dentist_1303-9365.jpg"

@@ -1,10 +1,7 @@
 
-
 .banner{
     background-image: url(../../img/banner/banner.jpg);
     height: 700px; 
-   
-
     background-size: cover;
 }
 .dark-overly{
@@ -20,5 +17,5 @@
 }
 .title-font{
     font-size: 100px;
-    color: rgb(78, 186, 212)
+    color: rgb(78, 186, 212);
 }
