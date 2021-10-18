@@ -19,3 +19,24 @@
     font-size: 100px;
     color: rgb(78, 186, 212);
 }
+
+
+@media only screen and (max-width: 425px) {
+    .banner{
+        height: 300px; 
+        background-size: cover;
+    }
+    .dark-overly{
+        height: 300px;
+    }
+    .text-position{
+      
+        height: 300px;
+    }
+    .title-font{
+        font-size: 30px;
+    }
+    .title-des{
+        display: none;
+    }
+}

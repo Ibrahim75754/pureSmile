@@ -11,13 +11,13 @@ const Footer = () => {
                     </div>
                     <hr />
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-md-6">
                             <h4>GET IN TOUCH</h4>
                             <p><span className="fas fa-map-marker-alt"></span> G5 Technology JSC, Room 1101, Glory Palace Apartment, Truong Thi Ward, Vinh City, Nghe An Province, VietNam(42000).</p>
                             <p><i className="fas fa-phone-alt"></i> (+84) 388-969-888</p>
 
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6">
 
                         </div>
                         <hr />
