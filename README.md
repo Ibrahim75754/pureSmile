@@ -1,7 +1,9 @@
-# ACADEMIA an Educational React site
+# PureSmile Authentication website
 
-https://pensive-franklin-90078f.netlify.app/
+Live site: https://healthcare-3e21b.web.app/
 
-### `①  You can Enroll our courses` 
-### `②   Yo can see our corses & instructor` 
+### `①  You can Easily book Apointment.` 
+### `②  You can see our Our Doctor.` 
+### `③  Easy to login or registration.` 
+### `③  Easy to visite` 
 ### `③  Easy to use & simple user interface` 
