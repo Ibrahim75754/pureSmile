@@ -16,7 +16,7 @@ const Header = () => {
                     <Navbar.Brand className="logo-name fs-3" href="#home">PureSmile</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto  text-light">
+                        <Nav className="me-auto fw-bold">
                             <NavLink activeStyle={style} className="nav-link" to="/home">Home</NavLink>
                             <NavLink activeStyle={style} className="nav-link" to="/about-us">About Us</NavLink>
                             <NavLink activeStyle={style} className="nav-link" to="/hosgme">sgsdgs</NavLink>
@@ -27,7 +27,10 @@ const Header = () => {
                             <Navbar.Text className="me-2">
                                 Signed in as: <a href="#login">Mark Otto</a>
                             </Navbar.Text>
-                            <Button variant="outline-light">Login</Button>
+                            <Button>
+                                <NavLink activeStyle={style} className="text-decoration-none text-white" to="/login">Login</NavLink>
+                            </Button>
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AboutUs from './component/AboutUs/AboutUs';
 import Home from './component/Home/Home';
+import Login from './component/Login/Login';
+import Registration from './component/Registratration/Registration';
 import ServiceDetails from './component/ServiceDetails/ServiceDetails';
 
 function App() {
@@ -13,14 +15,20 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route exact path="/home">
+          <Route path="/home">
             <Home></Home>
           </Route>
-          <Route exact path="/about-us">
+          <Route path="/about-us">
             <AboutUs></AboutUs>
           </Route>
-          <Route exact path="/home/:serviceId">
+          <Route path="/home/:serviceId">
             <ServiceDetails></ServiceDetails>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/registration">
+            <Registration></Registration>
           </Route>
         </Switch>
       </Router>
