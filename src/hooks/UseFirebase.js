@@ -6,7 +6,9 @@ initializeAuthentication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
+
+
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
@@ -15,6 +17,12 @@ const useFirebase = () => {
         return signInWithPopup(auth, googleProvider)
             .finally(() => { setLoading(false) });
     }
+    //email...................................
+    // const createUser = () => {
+    //     setLoading(true);
+    //     return createUserWithEmailAndPassword(auth, email, password)
+    //         .finally(() => { setLoading(false) });
+    // }
 
     const logOut = () => {
         setLoading(true);
@@ -43,6 +51,7 @@ const useFirebase = () => {
         user,
         loading,
         signInUsingGoogle,
+        // createUser,
         logOut
     }
 }
