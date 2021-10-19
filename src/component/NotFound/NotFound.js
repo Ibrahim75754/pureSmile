@@ -1,9 +1,13 @@
 import React from 'react';
+import img from './../../img/404page/404.png';
+import './NotFound.css';
 
 const NotFound = () => {
     return (
-        <div>
-            <h1>404 page</h1>
+        <div className="position d-flex justify-content-center">
+
+            <img className="" src={img} alt="" />
+
         </div>
     );
 };
