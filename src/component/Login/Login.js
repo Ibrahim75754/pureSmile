@@ -1,14 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
+import UseAuth from '../../hooks/UseAuth';
 import './login.css';
+import icon from './../../img/logo/gmail.png';
 
 const Login = () => {
+    const { user, signInUsingGoogle } = UseAuth();
+    const location = useLocation();
+    console.log(location.state?.from);
+
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
+
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+    }
     return (
         <div className="login-body d-flex justify-content-center align-items-center">
             <div class="text-center border rounded-3 p-5 bg-white">
                 <h1 className="mb-5">Please Login</h1>
 
-                <form action="" >
+                <form onSubmit="" >
                     <div className="d-flex justify-content-center">
                         <div className="mb-3">
                             <div class="form-group">
@@ -28,7 +44,7 @@ const Login = () => {
 
                 <p>New User? <Link to="/registration">Registration</Link></p>
                 <div>-----------Login With-----------</div>
-                <button className="btn bg-color mt-3 border"><i class="fa fa-google p-2 "></i></button>
+                <button onClick={handleGoogleLogin} className="btn bg-color mt-3 border"><img src={icon} alt="" height="30" /></button>
 
             </div>
         </div>

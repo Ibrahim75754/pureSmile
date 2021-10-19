@@ -7,7 +7,7 @@ const Registration = () => {
             <div class="text-center border rounded-3 p-5 bg-white">
                 <h1 className="mb-5">Create An Account</h1>
 
-                <form action="index.html">
+                <form onSubmit="">
                     <div className="d-flex justify-content-center">
                         <div className="mb-3">
                             <div class="form-group">
@@ -38,3 +38,18 @@ const Registration = () => {
 };
 
 export default Registration;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import UseAuth from '../../hooks/UseAuth';
 import logo from './../../img/logo/download.png';
 import './Header.css';
 
 const Header = () => {
+    const { user, logOut } = UseAuth();
     const style = {
         color: "white"
     }
@@ -24,12 +26,20 @@ const Header = () => {
                         </Nav>
                         <Nav>
 
-                            <Navbar.Text className="me-2">
-                                Signed in as: <a href="#login">Mark Otto</a>
-                            </Navbar.Text>
-                            <Button>
-                                <NavLink activeStyle={style} className="text-decoration-none text-white" to="/login">Login</NavLink>
-                            </Button>
+                            {
+                                user.email ?
+                                    <div>
+                                        <Navbar.Text className="me-2" >
+                                            Hi, {user.displayName}
+                                        </Navbar.Text>
+                                        <Button>
+                                            <NavLink onClick={logOut} className="text-decoration-none text-white" to="/home">LogOut</NavLink>
+                                        </Button>
+                                    </div> :
+                                    <Button>
+                                        <NavLink className="text-decoration-none text-white" to="/login">Login</NavLink>
+                                    </Button>
+                            }
 
                         </Nav>
                     </Navbar.Collapse>

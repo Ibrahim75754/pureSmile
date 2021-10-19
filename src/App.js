@@ -5,33 +5,40 @@ import AboutUs from './component/AboutUs/AboutUs';
 import Home from './component/Home/Home';
 import Login from './component/Login/Login';
 import Registration from './component/Registratration/Registration';
+import NotFound from './component/NotFound/NotFound';
 import ServiceDetails from './component/ServiceDetails/ServiceDetails';
+import AuthProvider from './context/AuthProvider';
 
 function App() {
   return (
     <div className="">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/about-us">
-            <AboutUs></AboutUs>
-          </Route>
-          <Route path="/home/:serviceId">
-            <ServiceDetails></ServiceDetails>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/registration">
-            <Registration></Registration>
-          </Route>
-        </Switch>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <Route exact path="/about-us">
+              <AboutUs></AboutUs>
+            </Route>
+            <Route exact path="/home/:serviceId">
+              <ServiceDetails></ServiceDetails>
+            </Route>
+            <Route exact path="/login">
+              <Login></Login>
+            </Route>
+            <Route exact path="/registration">
+              <Registration></Registration>
+            </Route>
+            <Route exact path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
