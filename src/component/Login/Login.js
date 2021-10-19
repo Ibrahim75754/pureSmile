@@ -56,22 +56,22 @@ const Login = () => {
     }
     return (
         <div className="login-body d-flex justify-content-center align-items-center">
-            <div class="text-center border rounded-3 p-5 bg-white">
+            <div className="text-center border rounded-3 p-5 bg-white">
                 <h1 className="mb-5">Please Login</h1>
 
                 <form onSubmit={handleLogin} >
                     <div className="d-flex justify-content-center">
                         <div className="mb-3">
-                            <div class="form-group">
-                                <input class="form-control" onBlur={handleEmail} type="email" placeholder="Email" required />
+                            <div className="form-group">
+                                <input className="form-control" onBlur={handleEmail} type="email" placeholder="Email" required />
                             </div><br />
-                            <div class="form-group">
-                                <input class="form-control" onBlur={handlePass} type="password" placeholder="Password" required />
+                            <div className="form-group">
+                                <input className="form-control" onBlur={handlePass} type="password" placeholder="Password" required />
                                 <p className="text-danger">{error}</p>
                             </div>
                             <br />
-                            <div class="form-group">
-                                <button class="btn btn-color w-100" type="submit">Login</button>
+                            <div className="form-group">
+                                <button className="btn btn-color w-100" type="submit">Login</button>
                             </div>
                         </div>
                     </div>
