@@ -12,7 +12,7 @@ const Header = () => {
     }
     return (
         <div className="header-bg">
-            <Navbar collapseOnSelect expand="lg">
+            <Navbar collapseOnSelect expand="lg" variant="dark">
                 <Container>
                     <img className="logo me-2" src={logo} alt="" />
                     <Navbar.Brand className="logo-name fs-3" href="#home">PureSmile</Navbar.Brand>

@@ -5,7 +5,7 @@ import './login.css';
 import icon from './../../img/logo/gmail.png';
 
 const Login = () => {
-    const { user, signInUsingGoogle } = UseAuth();
+    const { signInUsingGoogle } = UseAuth();
     const location = useLocation();
     console.log(location.state?.from);
 
